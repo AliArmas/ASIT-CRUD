@@ -29,9 +29,8 @@ class clienteController extends Controller{
     }
 
     public function update(Request $request, $id){
-        $cliente = Cliente::findOrFail($request->id);
-        
-        $cliente -> name = $request-> name;
+        $cliente = Cliente::findOrFail($request->id); 
+        // $cliente -> name = $request-> name;
         $cliente -> cellphone = $request-> cellphone;
         $cliente -> email = $request-> email;
         $cliente -> address = $request-> address;
